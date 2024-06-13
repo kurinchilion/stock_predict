@@ -111,3 +111,50 @@ $ pip install streamlit plotly yfinance pandas scikit-learn
 ```shell
 $ streamlit run ema_visualization_app.py
 ```
+
+
+### Price Probability Calculator
+```
+$ pip install yfinance numpy pandas scipy streamlit plotly
+```
+
+**Streamlit Interface:**
+
+<p>Create a title and input fields for the stock symbol, period, and future price.
+Add a button to trigger the probability calculation.</p>
+
+**Fetch Historical Data:**
+
+<p>Use yfinance to fetch historical closing prices for the specified period.</p>
+
+**Calculate Daily Returns:**
+
+<p>Compute daily percentage returns from the closing prices.</p>
+
+**Calculate Probability:**
+
+<p>Use the cumulative distribution function (CDF) of the normal distribution to calculate the probability that the stock's price will be at or below a given future price.</p>
+
+**Plot Data:**
+
+<p>Use plotly to create an interactive line chart of the closing prices and display it using Streamlit.</p>
+
+```shell
+$ streamlit run price_probability_calculator.py
+```
+
+<p>This Streamlit app fetches historical stock data, calculates the probability of the stock reaching a specified future price based on historical returns, and plots the historical closing prices. You can further customize the app by adding more features or refining the calculations.</p>
+
+
+### Price Probability Range
+```
+$ pip install yfinance numpy pandas scipy streamlit plotly
+```
+
+```shell
+$ streamlit run price_probability_range.py
+```
+
+<p>This Streamlit app fetches historical stock data, calculates the probability of the stock reaching a specified future price based on historical returns, and plots the historical closing prices along with the predicted future prices and their confidence interval. You can further customize the app by adding more features or refining the calculations.</p>
+
+
