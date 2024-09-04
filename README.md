@@ -158,3 +158,16 @@ $ streamlit run price_probability_range.py
 <p>This Streamlit app fetches historical stock data, calculates the probability of the stock reaching a specified future price based on historical returns, and plots the historical closing prices along with the predicted future prices and their confidence interval. You can further customize the app by adding more features or refining the calculations.</p>
 
 
+### Relative Strength Index
+
+<p>Create a Streamlit app that calculates and plots the Relative Strength Index (RSI) from historical prices fetched from Yahoo Finance</p>
+
+```
+$ pip install yfinance numpy pandas streamlit plotly
+```
+
+```shell
+$ streamlit run relative_strength_index.py
+```
+
+<p>This Streamlit app fetches historical stock data, calculates the RSI using the specified method and window, and plots both the historical closing prices and the RSI. </p>
